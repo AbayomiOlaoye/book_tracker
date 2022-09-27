@@ -3,7 +3,9 @@ import Storage from './modules/storage.js';
 import validateForm from './modules/validateForm.js';
 import removeBook from './modules/removeElement.js';
 import Book from './modules/newObject.js';
+/* eslint-disable */
 import { writeBook, UI } from './modules/UI_display.js';
+/* eslint-enable */
 import singlePage from './modules/singlePageApp.js';
 import { DateTime } from './modules/luxon.js';
 
