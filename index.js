@@ -7,9 +7,9 @@ import { writeBook, UI } from './modules/UI_display.js';
 import singlePage from './modules/singlePageApp.js';
 import { DateTime } from './modules/luxon.js';
 
+/* eslint-disable */
 const library = document.querySelector('.library');
 
-/* eslint-disable */
 export default library;
 /* eslint-enable */
 

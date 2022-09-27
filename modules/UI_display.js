@@ -13,7 +13,7 @@ const writeBook = (book) => {
         <button type="button" class="remove">Remove</button>
       </td>
     </tr>
-  `
+  `;
 };
 
 class UI {
