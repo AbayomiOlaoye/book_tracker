@@ -3,6 +3,6 @@ class Book {
     this.title = title;
     this.author = author;
   }
-};
+}
 
 export default Book;

@@ -9,7 +9,9 @@ import { DateTime } from './modules/luxon.js';
 
 const library = document.querySelector('.library');
 
+/* eslint-disable */
 export default library;
+/* eslint-enable */
 
 // Add new || Fetch books to || from Local Storage
 document.querySelector('.add').addEventListener('click', (e) => {
@@ -24,7 +26,6 @@ document.querySelector('.add').addEventListener('click', (e) => {
       document.querySelector('.error-index').textContent = '';
     }, 2000);
   } else {
-
     /* Create & Add new book */
     const newBook = new Book(title, author);
     writeBook(newBook);

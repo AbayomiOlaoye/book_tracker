@@ -1,9 +1,11 @@
+/* eslint-disable */
 import library from '../index.js';
 import Storage from './storage.js';
+/* eslint-enable */
 
 /* Display books in DOM */
-const writeBook = (book) => library.innerHTML += 
-  `
+const writeBook = (book) => {
+  library.innerHTML += `
     <tr>
       <td>${book.title}</td>
       <td>${book.author}</td>
@@ -11,7 +13,8 @@ const writeBook = (book) => library.innerHTML +=
         <button type="button" class="remove">Remove</button>
       </td>
     </tr>
-  `;
+  `
+};
 
 class UI {
   static displayBook = () => {
