@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Tracker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+      <nav class="nav-bar flex-row">
+        <div class="logo">
+          BooK<span class="logo-text">Tracker</span>
+        </div>
+        <ul class="nav-list flex-row">
+          <li><a href="#" data-page="page1">List</a></li>
+          <li><a href="#" data-page="page2">New Book</a></li>
+          <li><a href="#" data-page="page3">App Info</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="date"></div>
+
+  <section class="content" id="page1">
+    <div class="container">
+      <h2>All Awesome Books</h2>
+      <table class="library">
+        <tr>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>Delete</th>
+        </tr>
+        <!-- Dynamically loaded Content -->
+      </table>
+    </div>
+  </section>
+  <section class="content" id="page2">
+    <div class="container">
+      <form action="#" method="post" class="form">
+        <input type="text" name="title" id="title" placeholder="Book Title">
+        <input type="text" name="author" id="author" placeholder="Author">
+        <button class="add" type="submit">Add Book</button>
+      </form>
+    </div>
+  </section>
+  <section class="content" id="page3">
+    <div class="container">
+      <h2>Contact Information</h2>
+      <p class="para">Thank you for using my Book App.</p>
+      <p class="para">You can reach out to me via:</p>
+      <ul class="list">
+        <li>Our <a class="social_links" href="https://www.github.com/AbayomiOlaoye" target="_blank"  rel="noopener">Github handle</a></li>
+        <li>A tweet on <a class="social_links" href="https://www.twitter.com/olaoyeelijah">Twitter</a></li>
+        <li>Connect on <a class="social_links" href="https://www.linkedin.com/in/oluwatoyinolaoye" target="_blank"  rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <small class="footer">
+        &copy; Copyright 2022.<br>
+        Be kind enough with a star on <a href="http://www.github.com/AbayomiOlaoye/book-tracker" target="_blank" rel="noopener">GitGub</a>
+      </small>
+    </div>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
