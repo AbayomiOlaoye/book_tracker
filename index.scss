@@ -1,8 +1,8 @@
 /* Variables */
-$adobe-black: #000B1D;
-$orange: #FF9A00;
-$deep-green: #00A98F;
-$light-blue: #8BC0D0;
+$adobe-black: #000b1d;
+$orange: #ff9a00;
+$deep-green: #00a98f;
+$light-blue: #8bc0d0;
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ $light-blue: #8BC0D0;
 
   button {
     cursor: pointer;
-  }  
+  }
 }
 
 body {
@@ -58,7 +58,7 @@ body {
     .nav-list {
       gap: 2rem;
 
-      & li:nth-of-type(2) {
+      li:nth-of-type(2) {
         border-left: 2px solid $orange;
         border-right: 2px solid $orange;
         padding: 0 2rem;
@@ -95,7 +95,9 @@ body {
       tr:nth-child(even) {
         background-color: $light-blue;
       }
-      td, th {
+
+      td,
+      th {
         text-align: left;
         padding: 8px;
         text-transform: capitalize;
@@ -124,7 +126,7 @@ body {
       }
     }
   }
-  
+
   #page2 {
     .form {
       display: flex;
@@ -152,7 +154,7 @@ body {
         &:hover {
           background-color: $orange;
           color: $adobe-black;
-        }        
+        }
       }
     }
   }

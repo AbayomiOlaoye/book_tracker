@@ -1,9 +1,9 @@
-import { library } from "../index.js";
-import { Storage } from "./storage.js";
+import library from '../index.js';
+import Storage from './storage.js';
 
 /* Display books in DOM */
-const writeBook = (book) => {
-  return library.innerHTML += `
+const writeBook = (book) => library.innerHTML += 
+  `
     <tr>
       <td>${book.title}</td>
       <td>${book.author}</td>
@@ -11,25 +11,24 @@ const writeBook = (book) => {
         <button type="button" class="remove">Remove</button>
       </td>
     </tr>
-  `
-};
+  `;
 
 class UI {
   static displayBook = () => {
-    let cabinet = Storage.getBook();
+    const cabinet = Storage.getBook();
     cabinet.map(writeBook).join('');
-  }
+  };
 
   /* Delete book */
   static deleteBook = (title) => {
-    let cabinet = Storage.getBook();
+    const cabinet = Storage.getBook();
     cabinet.forEach((book, index) => {
       if (book.title === title) {
-        cabinet.splice(index, 1)
+        cabinet.splice(index, 1);
       }
     });
     localStorage.setItem('books list', JSON.stringify(cabinet));
-  }
+  };
 }
 
-export {writeBook, UI};
+export { writeBook, UI };

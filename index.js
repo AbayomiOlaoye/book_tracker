@@ -1,13 +1,15 @@
 /* Modules as local dependencies for the Book Tracker App */
-import { Storage } from "./modules/storage.js";
-import { validateForm } from "./modules/validateForm.js";
-import { removeBook} from "./modules/removeElement.js";
-import { Book } from "./modules/newObject.js";
-import { writeBook, UI } from "./modules/UI_display.js";
-import { singlePage } from "./modules/singlePageApp.js";
-import {DateTime} from "./modules/luxon.js";
+import Storage from './modules/storage.js';
+import validateForm from './modules/validateForm.js';
+import removeBook from './modules/removeElement.js';
+import Book from './modules/newObject.js';
+import { writeBook, UI } from './modules/UI_display.js';
+import singlePage from './modules/singlePageApp.js';
+import { DateTime } from './modules/luxon.js';
 
-export const library = document.querySelector('.library');
+const library = document.querySelector('.library');
+
+export default library;
 
 // Add new || Fetch books to || from Local Storage
 document.querySelector('.add').addEventListener('click', (e) => {
@@ -16,15 +18,16 @@ document.querySelector('.add').addEventListener('click', (e) => {
 
   /* Prevent Default Behavior */
   e.preventDefault();
-  if (title == "" || author == "") {
+  if (title === '' || author === '') {
     validateForm();
     setTimeout(() => {
-      document.querySelector('.error-index').textContent = "";
+      document.querySelector('.error-index').textContent = '';
     }, 2000);
   } else {
+
     /* Create & Add new book */
     const newBook = new Book(title, author);
-    writeBook(newBook)
+    writeBook(newBook);
     Storage.updateBook(newBook);
     document.querySelector('.form').reset();
   }
@@ -40,16 +43,16 @@ library.addEventListener('click', (e) => {
 });
 
 /* Implementing Single page Application function */
-document.querySelectorAll('.nav-list a').forEach(link => {
+document.querySelectorAll('.nav-list a').forEach((link) => {
   link.addEventListener('click', (e) => {
     singlePage(e.target.dataset.page);
-  })
-})
+  });
+});
 
 const realTime = () => {
   const td = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
   document.querySelector('.date').textContent = td;
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   setInterval(realTime, 1000);

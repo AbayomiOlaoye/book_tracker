@@ -1,4 +1,4 @@
-export class Storage {
+class Storage {
   static getBook() {
     let cabinet;
     if (localStorage.getItem('books list') !== null) {
@@ -15,3 +15,5 @@ export class Storage {
     localStorage.setItem('books list', JSON.stringify(cabinet));
   }
 }
+
+export default Storage;
