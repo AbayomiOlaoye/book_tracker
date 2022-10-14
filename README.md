@@ -3,7 +3,8 @@ A book inventory app aimed to maintain book history. Books can be easily added w
 You can also remove books at anytime with just a click!
 
 Books get added dynamically just like putting a book on a book rack.
-As I progress, the app will be styled using SASS, make use of local storage so that users get to store and really have access to their logged entries, and to introduce some navigation elements for smooth user experience.
+The app was styled using SASS, uses user's local storage so that user's info are stored and preserved in real-time.
+Another sterling feature of the app is its use of single-page application approach to smoothen user experience.
 
 ## Built With:
 
@@ -12,8 +13,15 @@ As I progress, the app will be styled using SASS, make use of local storage so t
 - JavaScript (ES6)
 - Linters
 
+## Highlights
+![image](https://user-images.githubusercontent.com/99715640/195868250-7e942a35-1ab2-4af6-be16-4e5a2c1aabc7.png)
+![image](https://user-images.githubusercontent.com/99715640/195868761-d15b0be7-f982-4369-a8fb-473aa98cd172.png)
+![image](https://user-images.githubusercontent.com/99715640/195868948-3ff66955-df4d-41d9-8c02-9a05a87469a1.png)
+![image](https://user-images.githubusercontent.com/99715640/195869069-0452f1db-667c-441e-a46d-e8b0ded550af.png)
+![image](https://user-images.githubusercontent.com/99715640/195869188-37c85f1d-2756-407e-854d-8aa75491fe88.png)
+
 ## Live Version 🌍
-This portion will be updated soon.
+Click [here](https://abayomiolaoye.github.io/book_tracker/) to view the live demo
 
 ## Getting Started 
 
